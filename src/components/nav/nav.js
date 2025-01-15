@@ -9,5 +9,5 @@ const nav = () => {
             </li>
         </ul>
         </nav>
-    );
+    )
 }

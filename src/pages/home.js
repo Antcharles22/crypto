@@ -1,9 +1,18 @@
-import React from "react";
+import React, { use } from "react";
+import { useEffect } from "react";
+import homeStore from "../stores/homeStore";
+
 
 export default function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-}
+    const store = homeStore()
+    useEffect(() => { 
+        store.fetchCoins()
+    }, [])
+
+    return(
+        <div>
+            <h1>Home</h1>
+            <p>This is the home page</p>
+        </div>
+    )
+} 
