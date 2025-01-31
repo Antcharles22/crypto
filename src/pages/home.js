@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { useEffect } from "react";
 import homeStore from "../stores/homeStore";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -9,10 +10,18 @@ export default function Home() {
         store.fetchCoins()
     }, [])
 
+
     return(
         <div>
-            <h1>Home</h1>
-            <p>This is the home page</p>
+            {store.coins.map((coin) => {
+                return (
+                    <div key = {coin.id}>
+                        <Link to = {`/${coin.id}`}>
+                            {coin.name}
+                        </Link>
+                    </div>
+                )
+            })}
         </div>
     )
 } 
