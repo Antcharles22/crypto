@@ -1,18 +1,19 @@
-import React, { use } from "react";
-import { useEffect } from "react";
-import homeStore from "../stores/homeStore";
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
+import homeStore from "../stores/homeStore"; 
 
 
 export default function Home() {
     const store = homeStore()
-    useEffect(() => { 
+ 
+    React.useEffect(() => { 
         store.fetchCoins()
     }, [])
 
 
     return(
         <div>
+            <input type = "text" value={store.query} onChange={store.setQuery} placeholder = "Search" /> 
             {store.coins.map((coin) => {
                 return (
                     <div key = {coin.id}>
