@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
-import homeStore from "../stores/homeStore"; 
+import homeStore from "../stores/homeStore";
+import Header from "../components/helpers/header"
 
 
 export default function Home() {
@@ -13,7 +14,11 @@ export default function Home() {
 
     return(
         <div>
+            <Header />
+            <header className="home-search" >
+            <h2>search for a coin</h2>
             <input type = "text" value={store.query} onChange={store.setQuery} placeholder = "Search" /> 
+            </header>
             {store.coins.map((coin) => {
                 return (
                     <div key = {coin.id}>
