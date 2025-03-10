@@ -16,13 +16,13 @@ function Show() {
         return <div style={{ color: 'red' }}>{store.error}</div>;
     }
 
-    if (!store.data || !store.data.market_data) {
+    if (!store.data) {
         return <div>Loading...</div>;
     }
 
     return (
         <div>
-            <Header back />
+            <Header back /> 
             <header>
                 <img src={store.data.image.large} alt={store.data.name} />
                 <h2>{store.data.name} ({store.data.symbol})</h2>
@@ -74,3 +74,5 @@ function Show() {
 }
 
 export default Show;
+
+
