@@ -116,23 +116,28 @@ input[type = "text"]{
     
 }
 
-.home-crypto{
-
+.home-crypto {
     a {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
     }
 
-    span{
+    span {
         display: block;
     }
-}
 
-.home-crypto-image {
-    width: 50px;
+    .home-crypto-image {
+        max-width: 80px; // Adjust the size as needed
+        display: block;
+    }
+
+    .home-crypto-details {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .home-crypto-name {
@@ -140,4 +145,15 @@ input[type = "text"]{
     font-size: 20px;
     color: #333;
     font-weight: 600;
+}
+
+.home-crypto-btc {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+.home-crypto-usd {
+    font-size: 14px;
+    color: #333;
 }
