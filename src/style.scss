@@ -28,7 +28,7 @@ h1{
 
 h2{
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
 }
 
 img{
@@ -106,20 +106,22 @@ input[type = "text"]{
    h2{
     font-size: 64px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     max-width: 600px;
     margin: 0 auto;
     width: 92%;
-    padding: 40px 0
+    padding: 40px 0 60px;
    }
-   
+
+}
     
+.home-cryptos-list {
+    border-top: 1px solid #333;
 }
 
 .home-crypto {
     a {
         display: flex;
-        gap: 30px;
         align-items: center;
         padding: 20px 0;
         border-bottom: 1px solid #333;
@@ -130,7 +132,7 @@ input[type = "text"]{
     }
 
     .home-crypto-image {
-        max-width: 80px; // Adjust the size as needed
+        width: 250px; // Adjust the size as needed
         display: block;
     }
 
@@ -138,11 +140,16 @@ input[type = "text"]{
         display: flex;
         flex-direction: column;
     }
+
+    
+    
 }
+
+
 
 .home-crypto-name {
     flex: 1;
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
     font-weight: 600;
 }
@@ -151,9 +158,63 @@ input[type = "text"]{
     font-size: 22px;
     color: #333;
     font-weight: 600;
+
+    img {
+        width: 20px;
+        display: inline-block;
+        margin: -3px 5px 0 0;
+        vertical-align: middle;
+    }
 }
 
 .home-crypto-usd {
     font-size: 14px;
     color: #333;
+}
+
+
+.show-header {
+    padding: 40px 0;
+    text-align: center;
+
+
+    img {
+        width:80px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size:32px;
+        margin-top:10px;
+    }
+}
+.show-graph {
+    height: 200px;
+    width: 100%;
+} 
+
+.show-details{
+    padding-top:50px;
+    padding-bottom: 60px;
+
+
+    h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align:center;
+        margin-bottom: 20px;
+    }
+}
+
+.show-details-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+
+    h3{
+        font-size:16px;
+        color:#111;
+    }
 }
