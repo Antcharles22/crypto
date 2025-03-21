@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
+    background-color:hsl(248, 54%, 20%);
+    
 }
 
 a {
     text-decoration: none;
+    color: #fff;
     
 }
 
@@ -24,6 +28,9 @@ img {
 h1{
     text-align: center;
     color: #fff;
+    background-color:hsl(249, 61%, 15%);
+    cursor: pointer;
+
 }
 
 h2{
@@ -46,16 +53,24 @@ input[type = "text"]{
     outline: none;
     display: block;
     width: 100%;
+    background-color:hsl(249, 52%, 25%);
 }   
 
  header a {
     text-decoration: none;
     color: #fff;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    background-color:hsl(249, 61%, 15%)
+      
+      
 }
 
 //header// 
 .header {
-    background-color: #333;
+    background-color:hsl(249, 61%, 15%);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -79,6 +94,7 @@ input[type = "text"]{
         transform: translateY(-50%);
         left: 10px;
         cursor: pointer;
+        background-color:hsl(249, 61%, 15%)
     }
     
 }
@@ -91,6 +107,11 @@ input[type = "text"]{
     h2{
         font-size: 32px;
         margin-bottom: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+          
+          
     }
     
   input {
@@ -102,21 +123,25 @@ input[type = "text"]{
 }
 
 .home-cryptos{
-
    h2{
-    font-size: 64px;
+    font-size: 38px;
     text-align: center;
     margin-bottom: 60px;
     max-width: 600px;
     margin: 0 auto;
     width: 92%;
     padding: 40px 0 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+          
    }
+
 
 }
     
 .home-cryptos-list {
-    border-top: 1px solid #333;
+    border-top: 1px solid #bdbcbc;
 }
 
 .home-crypto {
@@ -124,7 +149,7 @@ input[type = "text"]{
         display: flex;
         align-items: center;
         padding: 20px 0;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #bdbcbc;
     }
 
     span {
@@ -150,13 +175,13 @@ input[type = "text"]{
 .home-crypto-name {
     flex: 1;
     font-size: 24px;
-    color: #333;
+    color: #d6d6d6;
     font-weight: 600;
 }
 
 .home-crypto-btc {
     font-size: 22px;
-    color: #333;
+    color: #d6d6d6;
     font-weight: 600;
 
     img {
@@ -169,7 +194,7 @@ input[type = "text"]{
 
 .home-crypto-usd {
     font-size: 14px;
-    color: #333;
+    color: #d6d6d6;
 }
 
 
@@ -179,7 +204,7 @@ input[type = "text"]{
 
 
     img {
-        width:80px;
+        width:150px;
         border-radius: 50%;
         margin: 0 auto;
     }
@@ -212,9 +237,10 @@ input[type = "text"]{
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
+    color: #d6d6d6;
 
     h3{
-        font-size:16px;
-        color:#111;
+        font-size:22px;
+        
     }
 }

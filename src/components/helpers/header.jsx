@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header({ back }) {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
     return (
         <header className="header">
             <div className="width">
@@ -12,7 +18,7 @@ export default function Header({ back }) {
                 </svg>
                 </Link>
                 )}
-                <h1><Link to="/">ConinCase</Link></h1>
+                <h1><Link to="/" onClick={scrollToTop}>CoinCase</Link></h1>
             </div>
         </header>
     );
